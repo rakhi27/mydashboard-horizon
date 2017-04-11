@@ -12,7 +12,7 @@
 
 from django.conf.urls import url
 
-from openstack_dashboard.dashboards.mydashboard.mypanel import views
+from mydashboard_horizon.mydashboard_openstack_dashboard.mypanel import views
 
 
 urlpatterns = [

@@ -1,7 +1,7 @@
 # The slug of the dashboard to be added to HORIZON['dashboards']. Required.
-DASHBOARD = 'mydashboard'
+DASHBOARD = 'mydashboard_openstack_dashboard'
 
 # A list of applications to be added to INSTALLED_APPS.
 ADD_INSTALLED_APPS = [
-    'mydashboard-horizon',
+    'mydashboard_horizon.mydashboard_openstack_dashboard',
 ]

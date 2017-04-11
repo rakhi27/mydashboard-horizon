@@ -3,7 +3,8 @@
 1. Install module
 
     ```
-    Copy the package folder in existing openstack setup
+    git clone https://github.com/rakhi27/mydashboard-horizon.git
+    pip install -e mydashboard-horizon
     ```
 
 2. Copy extension files from the project root folder to ```/etc/openstack_dashboard/local/enabled``` or to ```/opt/stack/horizon/openstack_dashboard/local/enabled``` folder
