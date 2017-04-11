@@ -1,0 +1,22 @@
+{% extends 'mydashboard/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Mypanel" %}{% endblock %}
+
+{% block page_header %}
+  {% include "horizon/common/_page_header.html" with title=_("Mypanel") %}
+{% endblock page_header %}
+
+{% block main %}
+ <div class="row">
+  <div class="col-md-12">
+   <div id="editor" class="json-editor"></div>
+   <textarea id="json"></textarea><br/>
+   <button id="UiGen" class="btn btn-primary">Click Me</button>
+  </div>
+ </div>
+<input type="hidden" value="{{jsonResponse}}" id="jsonresp">
+{% endblock %}
+
+
+
+

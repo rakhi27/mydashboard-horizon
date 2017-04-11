@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load compress %}
+
+{% block sidebar %}
+  {% include 'horizon/common/_sidebar.html' %}
+{% endblock %}
+
+{% block css %}
+   {% include "_stylesheets.html" %}
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   {% compress css %}
+      <link rel="stylesheet" href="{{STATIC_URL}}mydashboard/css/style.css"/>
+      <link rel="stylesheet" href="{{STATIC_URL}}mydashboard/css/jsoneditor.css"/>
+   {% endcompress %}
+{% endblock %}
+
+{% block main %}
+    {% include "horizon/_messages.html" %}
+    {% block mydashboard_main %}{% endblock %}
+{% endblock %}
+
+{% block js %}
+    {% include "mydashboard/_scripts.html" %}
+{% endblock %}
