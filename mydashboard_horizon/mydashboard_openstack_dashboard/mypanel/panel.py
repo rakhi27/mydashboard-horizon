@@ -12,9 +12,8 @@
 
 from django.utils.translation import ugettext_lazy as _
 
+from mydashboard_horizon.mydashboard_openstack_dashboard import dashboard
 import horizon
-from mydashboard_horizon import dashboard
-from openstack_dashboard.api import keystone
 
 class Mypanel(horizon.Panel):
     name = _("Mypanel")
